@@ -1,4 +1,58 @@
+/* HERO SECTION */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+/* Left text */
+.home .left {
+    width: 50%;
+}
+
+.home .left h1 {
+    font-size: 50px;
+}
+
+/* Right image */
+.home .right {
+    width: 50%;
+    text-align: center;
+}
+
+.home .right img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home .left,
+    .home .right {
+        width: 100%;
+    }
+
+    .home .left h1 {
+        font-size: 28px;
+    }
+
+    .home .right img {
+        max-width: 280px;
+        margin-top: 20px;
+    }
+}
+
+
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
